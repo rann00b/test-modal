@@ -1,0 +1,66 @@
+{
+  "name": "home",
+  "type": "page",
+  "url": "/home",
+  "params": {},
+  "variables": [
+    {
+      "name": "$modal",
+      "type": "service",
+      "description": ""
+    },
+    {
+      "name": "showModal",
+      "type": "method",
+      "description": "",
+      "body": "$ctrl.$modal.open(\"abc-modal\")",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    }
+  ],
+  "children": [
+    {
+      "name": "Button",
+      "nodeName": "bln-button",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "wAx2tG"
+        },
+        {
+          "property": "core",
+          "value": ""
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": ""
+      },
+      "styles": [],
+      "children": [],
+      "type": "core-component",
+      "id": "button",
+      "expressions": [
+        {
+          "expression": "\"Show Modal\"",
+          "to": "label"
+        },
+        {
+          "expression": "$ctrl.showModal()",
+          "to": "onClick"
+        }
+      ],
+      "mapLines": []
+    }
+  ]
+}
